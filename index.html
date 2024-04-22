@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mommy Monitor - Empowering Your Pregnancy Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 align="center">Mommy Monitor</h1>
+        <h2 align="center">Your Personalized Pregnancy Companion</h2>
+    </header>
+
+    <main>
+        <section class="Personalized-Tracker">
+            <h3 align="center">Personalized Pregnancy Tracker</h3>
+            <p  style="text-align: center;>Keep track of your pregnancy progress, milestones, and appointments with ease.</p>
+            <div id="due-date-container">
+                <label for="due-date">Enter your due date:</label>
+                <input type="date" id="due-date" required>
+                <button onclick="calculateMilestones()">Calculate Milestones</button>
+            </div>
+            <div id="milestones-container"></div>
+        </section>
+
+        <section class="Nutrition-Wellness">
+            <h3 align="center">Nutrition & Wellness Guidance</h3>
+            <p style="text-align: center;">Receive personalized meal plans, nutrition advice, and access to prenatal yoga, meditation, and exercise routines.</p>
+            <div id="nutrition-advice"></div>
+            <div id="exercise-routines"></div>
+        </section>
+
+        <section class="Medicine-Tracker">
+            <div class="medicine-tracker">
+                <h2 align="center">Medicine Tracker</h2>
+                <div style="text-align: center;" class="medicine-list">
+                    <div class="medicine-item">
+                        <input type="checkbox" id="medicine1">
+                        <label for="medicine1">Prenatal Vitamins</label>
+                    </div>
+                    <div class="medicine-item">
+                        <input type="checkbox" id="medicine2">
+                        <label for="medicine2">Iron Supplement</label>
+                    </div>
+                    <div class="medicine-item">
+                        <input type="checkbox" id="medicine3">
+                        <label for="medicine3">Folic Acid</label>
+                    </div>
+                    <!-- Add more medicines here -->
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        </section>
+
+        <section class="Appointment-Management">
+            <h3 align="center">Doctor Appointment Management</h3>
+            <p  style="text-align: center;>Schedule and track your doctor appointments with our convenient calendar.</p>
+            <div id="calendar-container"></div>
+            <button onclick="addAppointment()">Add Appointment</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mommy Monitor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
